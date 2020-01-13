@@ -1,0 +1,97 @@
+commence à 08:38
+
+Projet Big Data 
+
+propose un systeme de stockage distribué,résilient
+
+de la réplication, persistence
+
+temps de réponse petite
+
+dans ces données 
+
+11:09
+trois types de fichier csv compresse
+les event
+les mentions 
+le graphe des relation
+
+masterfilelist.txt
+
+massterfilelist ) translation/txt
+
+
+
+tous les problemes d'ingestion de données 
+
+cassandra
+
+
+ne pas dépasser 300 euros
+au moins une tehcnologie
+problematique d'ingestion des données! requetage de données
+
+
+code source : github
+présentation : architecture, modélisation, avantage et inconvenients;
+
+modelisation de votre donnee; compromis, volumetrie en tant que stockage 
+
+
+volumetrie 1 mois de données et répondre au 4 questions
+
+
+gkg : données 
+
+si vous fqit juste le comptage des 
+
+quelles sont les tables, les champs, une idée de la volumétrie.
+
+
+27:00 slide Approche.
+
+
+DATA Ingestion
+Distributed processing system
+
+
+POur la question 3; juste utiliser la table GKG
+
+
+probleme de Latence avec S3
+ordre de vitesse : disque locaux , puis EBS et enfin S"
+
+
+
+WHEN TO USE SQL
+Need high Availability in the data: Indicates the system is always up and there is no downtime
+Have Large Amounts of Data
+Need Linear Scalability: The need to add more nodes to the system so performance will increase linearly
+Low Latency: Shorter delay before the data is transferred once the instruction for the transfer has been received.
+Need fast reads and write
+
+CASSANDRA
+Masterless architecture with no single point of failure
+high available
+linearly scalable (you add more nodes)
+
+eventual consistency : over time if no new changes are made, each copy of my data will be the same. but if there is a change, the value of your data will be different in different location.  (in milliseconds)  
+
+CAP Theorem:
+** Consistency**:
+Every read from the database gets the latest (and correct) piece of data or an error
+
+Availability: Every request is received and a response is given -- without a guarantee that the data is the latest update
+
+Partition Tolerance: The system continues to work regardless of losing network connectivity between nodes
+
+
+one table per query
+
+partition key + clustering column
+
+
+remember there are no duplicates in apache cassandra so if we don't have a unique key it will get overwritten
+
+
+
