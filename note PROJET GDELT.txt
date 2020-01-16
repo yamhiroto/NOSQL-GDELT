@@ -94,4 +94,15 @@ partition key + clustering column
 remember there are no duplicates in apache cassandra so if we don't have a unique key it will get overwritten
 
 
+docker cp ~/hiroto_yamakawa/INF728/PROJET_GDELT/data/tmp zeppelin:zeppelin/tmp
+
+
+Question to ask
+1) numMention and number of row in table mention
+2) kill a Master node cassandra? que se passe -t-il
+3) doit on utiliser masterfilelist-translate et si non, les articles ne sont -ils pas tous en anglais dans le fichier masterfilelist-translate?
+4) créer une colonne Ton moyen qui va remplacer la valeur moyenne du Tone average par une catégorie (neutre, plutôt négatif, plutôt positif)
+
+
+
 
