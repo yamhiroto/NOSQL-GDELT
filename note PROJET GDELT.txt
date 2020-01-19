@@ -93,6 +93,11 @@ partition key + clustering column
 
 remember there are no duplicates in apache cassandra so if we don't have a unique key it will get overwritten
 
+docker run -p 8080:8080 --rm --name zeppelin apache/zeppelin:0.7.3
+
+docker run -p 8080:8080 --rm --name zeppelin -v ~/hiroto_yamakawa/INF728/PROJET_GDELT/data:/zeppelin/tmp apache/zeppelin:0.7.3
+
+docker exec-it bash
 
 docker cp ~/hiroto_yamakawa/INF728/PROJET_GDELT/data/tmp zeppelin:zeppelin/tmp
 
