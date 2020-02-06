@@ -10,24 +10,26 @@ files appended to be used on a zeppelin container
 
 Link https://hub.docker.com/r/apache/zeppelin/
 
+# Important files
+
 0 - Columns_for_GDELT
 1 - gdeltETL
 2 - gdeltExploration 
 3 - gdeltCassandra_tables.json
 
 
-#Objective
+# Objective
 
 Achitecture designing and implementation , Pro and Cons of our solution;
 Limits, constraints
 
 
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt text](https://github.com/yamhiroto/NOSQL-GDELT/raw/master/architecture.png)
 
 
 
-#Useful links 
+# Useful links 
 
 https://blog.gdeltproject.org/announcing-partitioned-gdelt-bigquery-tables/
 
