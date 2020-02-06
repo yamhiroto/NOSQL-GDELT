@@ -12,9 +12,9 @@ Link https://hub.docker.com/r/apache/zeppelin/
 
 # Important files
 
-0 - Columns_for_GDELT
-1 - gdeltETL
-2 - gdeltExploration 
+0 - Columns_for_GDELT \\
+1 - gdeltETL \\
+2 - gdeltExploration \\ 
 3 - gdeltCassandra_tables.json
 
 
