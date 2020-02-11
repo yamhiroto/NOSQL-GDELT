@@ -1,7 +1,7 @@
 # NOSQL-GDELT
 AWS - SPARK - CASSANDRA - GDELT DATABASE
 
-
+- - - -
 ## Objective
 The purpose of this project was to design **a resilient and efficient distributed database / storage system***, 
 able to contain and manage 1 year of Data from **the GDELT PROJECT** and using **AWS services such as S3, Elastic Compute Cloud (EC2) or Elastic MapReduce (EMR)**. The system had to be **resilient (fault tolerant)**. i.e. queries results had to stay unchanged even after shutting down one node of our cluster.
@@ -14,6 +14,7 @@ Among the tasks, we had to :
 - List the Pro and Cons of our solution
 - Think about the limits and constraints. Explore where there are some rooms for improvement.
 
+- - - -
 ### Context
 This project was part of the curriculum of our Post-Master's Degree in Big Data at Telecom Paris.
 Full curriculum and details on this Degree [here](
@@ -30,9 +31,8 @@ Parfait Fangue  | [Pfangue](http://github.com/pfangue "pfangue")
 Guillaume Lehericy |
 Hiroto Yamakakawa | [Yamhiroto](http://github.com/yamhiroto "yamhiroto")
 
-////
 
-
+- - - -
 ### What is the GDELT Project ?
 *A Global Database of Society
 Supported by [GOOGLE_JIGSAW](http://jigsaw.google.com "GOOGLE Jigsaw") the GDELT Project monitors the world's broadcast, print, and web news from nearly every corner of every country in over 100 languages and identifies the people, locations, organizations, themes, sources, emotions, counts, quotes, images and events driving our global society every second of every day, creating a free open platform for computing on the entire world.*
@@ -60,6 +60,7 @@ Supported by [GOOGLE_JIGSAW](http://jigsaw.google.com "GOOGLE Jigsaw") the GDELT
 - Currently only working efficiently for 1 month worth of data. The gkg table is very large, the jury suggested after our presentation to use a {key:Int , Value : String} dictionnary to map the long string to a single integer in order to reduce the processing load.
 - Better visualisation framework ?
 
+- - - -
 ### Important files
 
 #### 0 - Columns_for_GDELT 
@@ -88,9 +89,9 @@ Below the four queries, whose solutions were necessary to design the CASSANDRA t
 
 
 #### 3 - gdeltCassandra_tables.json
-this json file includes the code to create the CASSANDRA tables, which will store the data for each query.
+This json file includes the code to create the CASSANDRA tables, which will store the data for each query.
 
-
+- - - -
 ### Other files
 
 #### Directory ROOT
@@ -103,7 +104,7 @@ Useful if you want to explore the data on your local system, without using any A
 Link for the docker image https://hub.docker.com/r/apache/zeppelin/
 
 
-
+- - - -
 # Useful links 
 
 http://andreiarion.github.io/projet2019.html  (Original link to the project. In French)
