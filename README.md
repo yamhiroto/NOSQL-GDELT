@@ -63,17 +63,17 @@ Supported by [GOOGLE_JIGSAW](http://jigsaw.google.com "GOOGLE Jigsaw") the GDELT
 - - - -
 ### Important files
 
-#### 0 - Columns_for_GDELT 
+#### 0 - Columns_for_GDELT.ipynb 
 Since the raw data returns a single long string called "value" for each row,
 This files contains a small script (to run on Jupyter Notebook) which will help you create all the columns as described in the GDELT documentations  (here is one for the *events* table : [Link](http://data.gdeltproject.org/documentation/GDELT-Event_Codebook-V2.0.pdf "link") )
 Simple, yet very useful ! :thumbsup:
 
-#### 1 - gdeltETL 
+#### 1 - gdeltETL.json
 This script (json file to run on Zeppelin Notebook) will download the file **masterfile.txt** and **masterfile-translation.txt** in a EC2 Cluster with Spark and extract all the links included in those files. It will then download each file in the same cluster, copy that file to a S3 bucket and delete it from the EC2 once finished.
 Thanks to the Regex, you can decide whether you want to download a day, a month or a year worth of Data.
 
 
-#### 2 - gdeltExploration 
+#### 2 - gdeltExploration.json
 This json file includes our codes written in SCALA in order to return the relevant data answering the queries. (Please note, most of the comments are still in French). The first 2 solutions are also written in Spark sql context.
 
 Below the four queries, whose solutions were necessary to design the CASSANDRA tables :
@@ -90,6 +90,10 @@ Below the four queries, whose solutions were necessary to design the CASSANDRA t
 
 #### 3 - gdeltCassandra_tables.json
 This json file includes the code to create the CASSANDRA tables, which will store the data for each query.
+
+#### 4 - traitement_v2.sh
+This file is a small script to automate the installation of CASSANDRA on each node of the cluster.
+Again, it's very handy to avoid this tedious task !
 
 - - - -
 ### Other files
