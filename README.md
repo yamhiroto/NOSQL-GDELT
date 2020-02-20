@@ -1,9 +1,11 @@
 # NOSQL-GDELT
 AWS - SPARK - CASSANDRA - GDELT DATABASE
 
+![alt text](https://github.com/yamhiroto/NOSQL-GDELT/raw/master/GDELTProjectmainpage.png)
+
 - - - -
 ## Objective
-The purpose of this project was to design **a resilient and efficient distributed database / storage system***, 
+The purpose of this project was to design **a resilient and efficient distributed database / storage system**, 
 able to contain and manage 1 year of Data from **the GDELT PROJECT** and using **AWS services such as S3, Elastic Compute Cloud (EC2) or Elastic MapReduce (EMR)**. The system had to be **resilient (fault tolerant)**. i.e. queries results had to stay unchanged even after shutting down one node of our cluster.
 
 **Amount of data** : 1 year - roughly 7 Terabytes.
