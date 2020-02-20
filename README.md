@@ -26,10 +26,10 @@ Less than two weeks, in January 2020
 ### Team Members
 Name  | Github
 ------------- | -------------
-Babacar Diouf | 
-Parfait Fangue  | [Pfangue](http://github.com/pfangue "pfangue")
+Babacar Diouf | [badiouf](http://github.com/badiouf "badiouf")
+Parfait Fangue  | [pfangue](http://github.com/pfangue "pfangue")
 Guillaume Lehericy |
-Hiroto Yamakakawa | [Yamhiroto](http://github.com/yamhiroto "yamhiroto")
+Hiroto Yamakakawa | [yamhiroto](http://github.com/yamhiroto "yamhiroto")
 
 
 - - - -
